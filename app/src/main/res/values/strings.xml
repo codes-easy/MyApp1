@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MyApp1</string>
     <string name="title1" > Week1 Andriod</string>
-    <string name="calculator_app">Calculator App</string>
+    //<string name="calculator_app">Calculator App</string>
     <string name="enter_first_number">Enter First Number</string>
     <string name="enter_second_number">Enter second Number</string>
     <string name="Add">+</string>
@@ -9,4 +9,5 @@
     <string name="Division">/</string>
     <string name="result_text">Result Text</string>
     <string name="Multiplication">*</string>
+
 </resources>
