@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     {
         //if (!firstnumberText.getText().toString().isEmpty() &&
                // !secondnumberText.getText().toString().isEmpty()) {
+        //first push
 
             double fn = Double.parseDouble(firstnumberText.getText().toString().isEmpty()? "0":(firstnumberText.getText().toString()));
             double sn = Double.parseDouble(secondnumberText.getText().toString().isEmpty()? "0":(secondnumberText.getText().toString()));
