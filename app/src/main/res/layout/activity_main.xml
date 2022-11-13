@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/AliceBlue"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    tools:ignore="ExtraText">
+
+
+
+    <TextView
+        android:id="@+id/Title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Week1 Android"
+        android:textSize="40sp"
+        android:background="@color/LightPink"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/PeachPuff"
+        android:gravity="center"
+        android:text="@string/calculator_app"
+        android:textSize="30sp"
+
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/FirstNumber"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_first_number"
+        android:autofillHints="Enter First Number"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/SecondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_second_number"
+        android:autofillHints="Enter Second Number"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+    <Button
+        android:id="@+id/AddButton"
+        android:text="@string/Add"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/Salmon"
+        android:textColor="@color/Blue"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        tools:ignore="HardcodedText"
+        style="?android:attr/buttonBarButtonStyle" />
+
+    <Button
+        android:id="@+id/SubButton"
+        android:text="@string/Substraction"
+        android:layout_marginEnd="10dp"
+        android:textSize="20sp"
+        android:backgroundTint="@color/Salmon"
+        android:textColor="@color/Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="?android:attr/buttonBarButtonStyle" />
+    <Button
+        android:id="@+id/MultiButton"
+        android:text="@string/Multiplication"
+        android:layout_marginEnd="10dp"
+        android:textSize="20sp"
+        android:backgroundTint="@color/Salmon"
+        android:textColor="@color/Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="?android:attr/buttonBarButtonStyle" />
+    <Button
+        android:id="@+id/DivButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Salmon"
+        android:text="@string/Division"
+        android:textColor="@color/Blue"
+        android:textSize="20sp"
+
+        tools:ignore="HardcodedText"
+        style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/result_text"
+        android:textSize="40sp"
+
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>
