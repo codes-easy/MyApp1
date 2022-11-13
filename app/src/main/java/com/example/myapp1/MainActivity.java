@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
+
 
 public class MainActivity extends AppCompatActivity
     implements View.OnClickListener {
@@ -24,8 +24,9 @@ public class MainActivity extends AppCompatActivity
     Button sub_button;
     Button multi_button;
     Button div_button;
-
+    Button Hisotry;
     TextView result_text;
+    Button clear_button;
 //    private void  calculate (String opr)
 //    {
 //        //if (!firstnumberText.getText().toString().isEmpty() &&
@@ -62,30 +63,60 @@ public class MainActivity extends AppCompatActivity
         Log.d("Calculator App", "Add created");
         calculatorClass = new CalculatorClass();
         //  EditText firstnumberText = (EditText) findViewById(R.id.FirstNumber);
-        firstnumberText = (EditText) findViewById(R.id.FirstNumber);
-        TextView title1Text = (TextView) findViewById(R.id.Title1);
+
+        //TextView title1Text = (TextView) findViewById(R.id.Title1);
         // title1Text.setText("This is a new text changed in Java File");
-        secondnumberText = (EditText) findViewById(R.id.SecondNumber);
-        TextView title2Text = (TextView) findViewById(R.id.Title2);
+
+        //TextView title2Text = (TextView) findViewById(R.id.Title2);
+
+        firstnumberText =  findViewById(R.id.FirstNumber);
+        secondnumberText =  findViewById(R.id.SecondNumber);
 
         add_button = findViewById(R.id.AddButton);
         sub_button = findViewById(R.id.SubButton);
         multi_button = findViewById(R.id.MultiButton);
         div_button = findViewById(R.id.DivButton);
+        clear_button = findViewById(R.id.clearButton);
+
+
         add_button.setOnClickListener(this);
         sub_button.setOnClickListener(this);
         multi_button.setOnClickListener(this);
         div_button.setOnClickListener(this);
-
-
         result_text = findViewById(R.id.resultText);
+        Hisotry.setOnClickListener(this);
+        clear_button.setOnClickListener(this);
+
 
     }
 
+        @SuppressLint("NonConstantResourceId")
         @Override
         public void onClick(View view) {
-            String op = ((Button)view).getText().toString();
-            validate(op);
+
+
+        switch (view.getId()){
+            case R.id.clearButton:
+                firstnumberText.setText("");
+                secondnumberText.setText("");
+                result_text.setText("");
+            break;
+
+
+            case R.id.showpreviouscontent:
+                if (!calculatorClass.History.isEmpty())
+                    result_text.setText(calculatorClass.History);
+
+                else
+                    result_text.setText("No previous History");
+                break;
+
+            default:
+                String op = ((Button)view).getText().toString();
+                validate(op);
+
+        }
+
 
         }
 
@@ -188,8 +219,7 @@ private void validate(String op){
         double sn = Double.parseDouble(secondnumberText.getText().toString());
         double result = calculatorClass.calculate(fn, sn, op);
         result_text.setText(fn + " " + op + " " + sn + " = " + result);
-        firstnumberText.setText("");
-        secondnumberText.setText("");
+
 
 
     } else {

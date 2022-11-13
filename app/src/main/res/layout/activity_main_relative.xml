@@ -71,6 +71,7 @@
 
     <LinearLayout
         android:id="@+id/linerlayoutbutton"
+        android:weightSum="5"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/SecondNumber"
         android:layout_marginTop="50dp"
@@ -88,6 +89,7 @@
             android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             style="?android:attr/buttonBarButtonStyle" />
 
         <Button
@@ -99,6 +101,7 @@
             android:textColor="@color/Blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             style="?android:attr/buttonBarButtonStyle" />
         <Button
             android:id="@+id/MultiButton"
@@ -109,6 +112,7 @@
             android:textColor="@color/Blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             style="?android:attr/buttonBarButtonStyle" />
         <Button
             android:id="@+id/DivButton"
@@ -116,9 +120,23 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/Salmon"
             android:text="@string/Division"
+            android:layout_marginEnd="10dp"
             android:textColor="@color/Blue"
             android:textSize="20sp"
+            android:layout_weight="1"
             style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Salmon"
+            android:text="@string/C"
+            android:textColor="@color/Blue"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle" />
+
 
 
 
@@ -138,8 +156,16 @@
 
         />
 
+<Button
+    android:id="@+id/showpreviouscontent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:text="@string/show_history"
 
 
+/>
 
 
 

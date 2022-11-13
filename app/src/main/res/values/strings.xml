@@ -9,5 +9,7 @@
     <string name="Division">/</string>
     <string name="result_text">Result Text</string>
     <string name="Multiplication">*</string>
+    <string name="C">C</string>
+    <string name="show_history">Show History</string>
 
 </resources>
