@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity
 
 
     EditText firstnumberText;
-
     EditText secondnumberText;
     Button add_button;
     Button sub_button;
@@ -71,11 +70,11 @@ public class MainActivity extends AppCompatActivity
 
         firstnumberText =  findViewById(R.id.FirstNumber);
         secondnumberText =  findViewById(R.id.SecondNumber);
-
         add_button = findViewById(R.id.AddButton);
         sub_button = findViewById(R.id.SubButton);
         multi_button = findViewById(R.id.MultiButton);
         div_button = findViewById(R.id.DivButton);
+        Hisotry = findViewById(R.id.showpreviouscontent);
         clear_button = findViewById(R.id.clearButton);
 
 

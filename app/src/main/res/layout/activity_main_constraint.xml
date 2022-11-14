@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/LightPink"
+        android:gravity="center"
+        android:text="@string/title1"
+        android:textSize="40sp" />
+
+
+    <TextView
+        android:id="@+id/Title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/PeachPuff"
+        android:gravity="center"
+        android:text="@string/calculator_app"
+        android:textSize="30sp"
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/FirstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="Enter First Number"
+        android:hint="@string/enter_first_number"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+
+
+        android:textColorHint="#757575" />
+
+
+    <EditText
+        android:id="@+id/SecondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="Enter Second Number"
+        android:hint="@string/enter_second_number"
+        android:inputType="numberDecimal"
+
+
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
+
+
+    <Button
+        android:id="@+id/AddButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Salmon"
+        android:text="@string/Add"
+        android:textColor="#6D4C41"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/SubButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Salmon"
+        android:text="@string/Substraction"
+        android:textColor="#6D4C41"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/MultiButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Salmon"
+        android:text="@string/Multiplication"
+        android:textColor="@color/Blue"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/DivButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Salmon"
+        android:text="@string/Division"
+        android:textColor="@color/Blue"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/clearButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Salmon"
+        android:text="@string/C"
+        android:textColor="@color/Blue"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_text"
+        android:textSize="25sp"
+
+
+        />
+
+    <Button
+        android:id="@+id/showpreviouscontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="679dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/show_history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
