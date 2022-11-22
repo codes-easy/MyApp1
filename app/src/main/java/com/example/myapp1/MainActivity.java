@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_relative);
+        setContentView(R.layout.activity_main_constraint);
         Log.d("Calculator App", "Add created");
         calculatorClass = new CalculatorClass();
         //  EditText firstnumberText = (EditText) findViewById(R.id.FirstNumber);
